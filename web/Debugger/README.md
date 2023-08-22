@@ -11,6 +11,9 @@ We are provided with a link to a webpage with the following content:
 <!--   <sup>An average linux user's desktop</sup> -->
 </p>
 First off, we take a look at the source code using `view-source:`, which gives us the following:
+<p align="center">
+  <img src="2.png" width="1000" /><br>
+</p>
 
 ---
 <sup>**Author:** might-tree</sup>
