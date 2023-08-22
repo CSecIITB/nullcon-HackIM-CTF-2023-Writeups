@@ -84,9 +84,13 @@ Now, the challenge allows us to take any $t-1$ shares from the $n$ shares. Ideal
 ```py
 sid = int(input(f"{i}.: Choose a share: "))
 if 1 <= sid <= sss.n:
-  print(shares[sid % sss.n])
+	print(shares[sid % sss.n])
 ```
 
 Note that $\text{shares}[0] = m$ is the message, and this should not be distributed to anyone. And they have kept $0$ out of the acceptable `sid` range. However, they perform a `sid % sss.n% for calculating the index and they allow the `sid` to be `sss.n`. So if we simply set our input `sid` to be $n$, it will give us $\text{shares}[n % n] = \text{shares}[0] = m$.<br>
 We connect to the server, look at the value of $n$ that's printed and simply send that as our chosen share index to retrieve the integer representation of the flag, which we can then covert to the string representation to recover the flag:<br>
 **ENO{SeCr3t_Sh4m1r_H4sh1ng}**
+
+---
+
+<sup>**Author:** Nilabha</sup>
