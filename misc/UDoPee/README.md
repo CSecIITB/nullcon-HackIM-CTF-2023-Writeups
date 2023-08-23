@@ -1,4 +1,4 @@
-![image](https://github.com/CSecIITB/nullcon-HackIM-CTF-2023-Writeups/assets/98173534/d70ddf66-9749-4cab-bd80-320a12f8d6c9)# U Do Pee?
+# U Do Pee?
 
 ## Challenge Description
 
