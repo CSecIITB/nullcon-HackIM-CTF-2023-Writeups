@@ -90,7 +90,7 @@ Hence, if we consider the polynomial ring modulo $N$, the integer $M_0$ is a roo
 $$g_0(x) = x^{1337} - C_0$$
 $$g_1(x) = (x+b)^{1337} - C_1$$
 
-Hence, $(x - M_0) ~|~ g_0$ and $(x - M_1) ~|~ g_1$ which implies $$(x - M_0) ~|~ gcd(g_0, g_1)$$
+Hence, $(x - M_0)\ |\ g_0$ and $(x - M_1)\ |\ g_1$ which implies $(x - M_0)\ |\ gcd(g_0, g_1)$
 
 If we can factor the polynomial $gcd(g_0, g_1)$, then $(x - M_0)$ will be one of the linear factors.
 
