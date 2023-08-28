@@ -101,15 +101,21 @@ We need to think of some different input to the $\text{Decrypt}$ function so tha
 The main part of the decrypt function is computing the point $T$ where
 $$T = c - B*d_a$$
 
-With $c = c_0 = m + P_a*d_b = m + G*d_a*d_b$ and $B = B_0 = G*d_b$,
+With $c = c_0 = m + P_a\*d_b = m + G\*d_a\*d_b$ and $B = B_0 = G\*d_b$,
 
-$$\begin{align*}T &= c_0 - B_0*d_a \\ &= m + G*d_a*d_b - (G*d_a)*d_b \\ &= m\end{align*}$$
+$$\begin{align*}T &= c_0 - B_0\*d_a \\ 
+&= m + G\*d_a\*d_b - (G\*d_a)\*d_b \\ 
+&= m\end{align*}$$
 
 And the `flag1` is encoded in the x-coordinate of point $m$.
 
 Due to additivity of points on Elliptic curves, we can pass a point $c' = c_0 + X$ and $B = B_0$ where $X$ is a point on the same elliptic curve, and get the value of $T' = c' - B*d_a$
 
-$$\begin{align*}T' &= c' - B*d_a \\ &= c_0 + X - B_0*d_a \\ &= m + X + G*d_a*d_b - (G*d_a)*d_b \\ &= m + X\end{align*}$$
+$$\begin{align*}T' &= c' - B\*d_a \\ 
+&= c_0 + X - B_0\*d_a \\ 
+&= m + X + G\*d_a\*d_b - (G\*d_a)\*d_b \\ 
+&= m + X
+\end{align*}$$
 
 Later we can subtract $X$ from $T'$ to get $m = T' - X$.
 
